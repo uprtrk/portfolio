@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-heading: var(--font-sora);
+  --font-sans: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #E8D5B0;
+  color: #0A0A0A;
+}
+
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
